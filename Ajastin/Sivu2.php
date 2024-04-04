@@ -11,7 +11,7 @@
     <?php
     echo Ajastin();
     ?>
-    <form action="Ajastin" action="Sivu3.php" method="post">
+    <form name="Ajastin" action="Sivu3.php" method="post">
         Ajastin <br>
         <input type="submit" value="Lopeta Ajastin">
     </form>
