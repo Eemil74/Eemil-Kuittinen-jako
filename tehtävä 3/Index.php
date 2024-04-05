@@ -10,6 +10,7 @@
     <input type="text" name="num1" placeholder="Syötä ensimmäinen luku">
     <input type="text" name="num2" placeholder="Syötä toinen luku">
     <input type="submit" name="submit" value="Laske">
+    <input type="reset">
     </form>
     <?php  
 if(isset($_POST['submit'])){
@@ -19,5 +20,6 @@ $vastaus = $num1 + $num2;
 $vastaus1 = $vastaus /2 ;
 echo "<p>Tulos: $vastaus</p><p> keskiarvo: $vastaus1</p>";}
 ?>
+</form>
 </body>
 </html>
