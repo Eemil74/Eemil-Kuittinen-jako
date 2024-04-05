@@ -6,19 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-<form method="post" action="button">
-    <input type="text" name="num1" placeholder="Syötä ensimmäinen luku">
-    <input type="text" name="num2" placeholder="Syötä toinen luku">
+<form method="post" action="">
+    <input type="text" name="num1" placeholder="Syötä paino">
+    <input type="text" name="num2" placeholder="Syötä pituus">
     <input type="submit" name="submit" value="Laske">
     <input type="reset">
     </form>
-    <?php  
+<?php 
 if(isset($_POST['submit'])){
     $num1 = $_POST['num1'];
     $num2 = $_POST['num2'];
-$vastaus = $num1 + $num2;
-$vastaus1 = $vastaus /2 ;
-echo "<p>Tulos: $vastaus</p><p> keskiarvo: $vastaus1</p>";}
+$vastaus = $num1 * 1.3 / pow(($num2/100),2.5);
+$vastaus = round($vastaus,2);
+echo "<p>Tulos: $vastaus</p>";}
 ?>
 </body>
 </html>
