@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promillemäärän laskuri</title>
+</head>
+<body>
+    <h2>Promillemäärän laskuri</h2>
+    <form action="alko.php" method="post">
+        Sukupuoli:
+        <input type="radio" name="sukupuoli" value="mies" checked>Mies
+        <input type="radio" name="sukupuoli" value="nainen">Nainen
+        <br><br>
+        Paino (kg):
+        <input type="number" name="paino" required>
+        <br><br>
+        Juotujen olutpullojen määrä:
+        <input type="number" name="olutpullojen_maara" min="0" required>
+        <br><br>
+        Juomiseen käytetty aika (tunteina):
+        <input type="number" name="juomisaika" min="0" required>
+        <br><br>
+        <input type="submit" value="Laske promillemäärä">
+    </form>
+</body>
+</html>
