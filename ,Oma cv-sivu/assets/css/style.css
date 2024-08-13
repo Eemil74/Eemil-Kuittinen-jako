@@ -538,11 +538,16 @@ section {
   color: #222222;
 }
 
+
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #537794;
   position: relative;
+}
+.Certi{
+  width: 50%;
+  height: 50vh;
 }
 
 .resume .resume-item h4 {
